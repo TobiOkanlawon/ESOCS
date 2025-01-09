@@ -1,0 +1,35 @@
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    height: 80vh;
+    min-height: 640px;
+    background: linear-gradient(0deg, #000000B2, #000000B2), url("../../images/hero-1.png");
+    background-size: cover;
+}
+
+.hero-container-inner-container {
+    text-align: center;
+    width: 60%;
+    /* background-color: yellow; */
+}
+
+.hero-container h1 {
+    font-family: "Libre Baskerville", serif;
+    margin-bottom: 32px;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 70px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.hero-container-inner-container div:first-of-type {
+    margin-bottom: 0.5em;
+}
+
+.hero-container-inner-container div:nth-of-type(2) {
+}

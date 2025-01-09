@@ -1,28 +1,29 @@
 import React from "react";
 import Button from "./Button";
 import { PresentIcon } from "../icons";
-import Link from "./HeaderLink";
+import HeaderLink from "./HeaderLink";
+import './header.css';
 
 const Header = () => {
   return (
     <header>
       <nav>
         <ul>
-          <img alt="Logo" src="../images/logo.png" />
+          <img alt="logo" src="../../images/logo.png" />
           <p>The Eternal Sacred Order of The Cherubim & Seraphim</p>
         </ul>
         <ul>
           <li>
-            <Link title="About us" href="" />
+            <HeaderLink title="About us" href="/about" />
           </li>
           <li>
-            <Link title="About us" href="" />
+            <HeaderLink title="About us" href="/about" />
           </li>
           <li>
-            <Link title="About us" href="" />
+            <HeaderLink title="About us" href="/about" />
           </li>
           <li>
-            <Link title="About us" href="" />
+            <HeaderLink title="About us" href="/about" />
           </li>
           <li id="header-link-special">
             <Button

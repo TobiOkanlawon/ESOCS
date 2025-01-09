@@ -1,14 +1,16 @@
+import { Link } from 'gatsby';
 import React from 'react';
+import "./headerLink.css"
 
 type Props = {
   href: string;
   title: string;
 }
 
-const Link: React.FC<Props> = ({href, title}) => {
+const HeaderLink: React.FC<Props> = ({href, title}) => {
   return (
-    <a href={href}>{title}</a>
+    <Link to={href}>{title}</Link>
   );
 };
 
-export default Link;
+export default HeaderLink;
