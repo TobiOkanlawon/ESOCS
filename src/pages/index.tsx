@@ -1,22 +1,28 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../layouts/HomeLayout";
-import { CharacteristicsContainer, Hero, UpcomingEvents, WatchWord, WelcomeToChurch } from "../components/pages/Index";
+import {
+  CharacteristicsContainer,
+  Hero,
+  UpcomingEvents,
+  WatchWord,
+  WelcomeToChurch,
+} from "../components/pages/Index";
 import { SliderType } from "../libs/types";
 import { Slider } from "../components/pages/Index";
 
 const cleanData = (oldData: any): SliderType[] => {
   const returnValue = [];
-  
+
   for (let i of oldData) {
     returnValue.push({
       id: i.id,
       title: i.sliders.sliderTitle,
       description: i.sliders.sliderCaption,
       button: {
-	text: i.sliders.buttonText,
-	url: i.sliders.buttonUrl.nodes.link,
-      }
+        text: i.sliders.buttonText,
+        url: i.sliders.buttonUrl.nodes.link,
+      },
     } as SliderType);
   }
 
@@ -65,10 +71,10 @@ export const pageQuery = graphql`
   }
 `;
 
-export function Head() {
-  return (
-    <Head title="Home Page || The Eternal Sacred Order of The Cherubim & Seraphim"/>
-  )
-}
+// export function Head() {
+//   return (
+//     <Head title="Home Page || The Eternal Sacred Order of The Cherubim & Seraphim"/>
+//   )
+// }
 
 export default Index;

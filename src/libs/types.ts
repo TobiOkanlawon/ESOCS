@@ -35,20 +35,20 @@ export type CharacteristicsDataType = {
 
 export type WelcomeProps = {
   // TODO: Check if this is the right way to type image sources
-  image: ImageCdnSourceImage;
-  title: string;
-  subTitle: string;
-  content: string[];
+  // image: ImageCdnSourceImage;
+  // title: string;
+  // subTitle: string;
+  // content: string[];
   // TODO: There's probably a gatsby export type for a link href
-  readMoreLinkDestination: string;
+  // readMoreLinkDestination: string;
 };
 
 export type CharacteristicsProps = {
 };
 
 export type UpcomingEventsProps = {
-  events: EventType[];
-  viewMoreEventsLinkDestination: string;
+  // events: EventType[];
+  // viewMoreEventsLinkDestination: string;
 };
 
 export type EventType = {
@@ -61,7 +61,7 @@ export type EventType = {
 };
 
 export type WatchWordProps = {
-  aboutUsLinkDestination: string;
+  // aboutUsLinkDestination: string;
 };
 
 export type NewsAndBlogProps = {

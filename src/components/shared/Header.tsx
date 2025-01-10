@@ -2,7 +2,7 @@ import React from "react";
 import Button from "./Button";
 import { PresentIcon } from "../icons";
 import HeaderLink from "./HeaderLink";
-import './header.css';
+import "./header.css";
 
 const Header = () => {
   return (
@@ -14,16 +14,16 @@ const Header = () => {
         </ul>
         <ul>
           <li>
-            <HeaderLink title="About us" href="/about" />
+            <HeaderLink title="About us" href="/" />
           </li>
           <li>
-            <HeaderLink title="About us" href="/about" />
+            <HeaderLink title="About us" href="/" />
           </li>
           <li>
-            <HeaderLink title="About us" href="/about" />
+            <HeaderLink title="About us" href="/" />
           </li>
           <li>
-            <HeaderLink title="About us" href="/about" />
+            <HeaderLink title="About us" href="/" />
           </li>
           <li id="header-link-special">
             <Button
