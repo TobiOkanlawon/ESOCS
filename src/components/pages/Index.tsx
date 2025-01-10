@@ -45,7 +45,7 @@ import Pastor from "../../images/pastor.png";
 import Events from "../../images/events.png";
 import { getImage } from "gatsby-plugin-image";
 import { convertToBgImage } from "gbimage-bridge";
-import BackgroundImage from "gatsby-background-image";
+// import BackgroundImage from "gatsby-background-image";
 import { graphql, useStaticQuery } from "gatsby";
 
 export const Hero: React.FC<HeroProps> = ({ title, subTitle }) => {
@@ -59,22 +59,22 @@ export const Hero: React.FC<HeroProps> = ({ title, subTitle }) => {
 };
 
 export const Slider: React.FC<SliderProps> = ({ sliders }) => {
-const { placeholderImage } = useStaticQuery(graphql`
-  query {
-    placeholderImage: file(relativePath: { eq: "hero-1.png" }) {
-      childImageSharp {
-        gatsbyImageData(formats: [AUTO, WEBP, PNG])
-      }
-    }
-  }
-`);
+// const { placeholderImage } = useStaticQuery(graphql`
+//   query {
+//     placeholderImage: file(relativePath: { eq: "hero-1.png" }) {
+//       childImageSharp {
+//         gatsbyImageData(formats: [AUTO, WEBP, PNG])
+//       }
+//     }
+//   }
+// `);
 
 
-  const image = getImage(placeholderImage);
-  const bgImage = convertToBgImage(image);
+  // const image = getImage(placeholderImage);
+  // const bgImage = convertToBgImage(image);
 
   return (
-    <BackgroundImage className="hero-container" {...bgImage}>
+    <section className="hero-container">
       <div className="hero-container-inner-container">
         <div>
           <h1 dangerouslySetInnerHTML={{ __html: sliders[2].title }} />
@@ -89,7 +89,7 @@ const { placeholderImage } = useStaticQuery(graphql`
           title={sliders[0].button.text}
         />
       </div>
-    </BackgroundImage>
+    </section>
   );
 };
 
